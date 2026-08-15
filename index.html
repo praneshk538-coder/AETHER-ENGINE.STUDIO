@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO-SHOP | Futuristic Gear</title>
+    <meta name="description" content="Premium futuristic e-commerce store with high-tech gear.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="logo">NEO-SHOP</div>
+        <ul class="nav-links">
+            <li><a href="#hero" class="active">HOME</a></li>
+            <li><a href="#products">GEAR</a></li>
+            <li><a href="#about">ABOUT</a></li>
+        </ul>
+        <button class="cart-btn" data-count="0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 20a1 1 0 100-2 1 1 0 000 2zM20 20a1 1 0 100-2 1 1 0 000 2z"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg>
+        </button>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="matrix-bg"></div>
+        <div class="hero-content fade-in-up">
+            <h1 class="glitch" data-text="WELCOME TO THE FUTURE">WELCOME TO THE FUTURE</h1>
+            <p>Upgrade your reality with our premium cyber-enhancements and next-gen gear.</p>
+            <a href="#products" class="btn btn-primary glow-effect">EXPLORE COLLECTION</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>SCROLL TO EXPLORE</p>
+        </div>
+    </header>
+
+    <section class="products-section" id="products">
+        <div class="section-header reveal">
+            <h2>LATEST <span class="text-neon">GEAR</span></h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card tilt-card reveal">
+                <div class="card-bg"></div>
+                <div class="card-img-wrapper">
+                    <img src="./assets/cyber_sneakers.png" alt="Neon glowing cyberpunk sneakers" class="floating-img">
+                </div>
+                <div class="card-info">
+                    <div class="tags"><span class="tag">NEW</span><span class="tag">AESTHETIC</span></div>
+                    <h3>Cyber Striders V.2</h3>
+                    <p class="desc">Hyper-responsive illuminated footwear with adaptive traction modules.</p>
+                    <div class="price-action">
+                        <span class="price">499.00 CREDITS</span>
+                        <button class="btn btn-outline glow-effect add-to-cart">ACQUIRE</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card tilt-card reveal" style="transition-delay: 0.1s;">
+                <div class="card-bg"></div>
+                <div class="card-img-wrapper">
+                    <img src="./assets/ar_goggles.png" alt="Futuristic AR goggles" class="floating-img" style="animation-delay: -1.5s;">
+                </div>
+                <div class="card-info">
+                    <div class="tags"><span class="tag">GEAR</span><span class="tag">ESSENTIAL</span></div>
+                    <h3>VisionXR HUD</h3>
+                    <p class="desc">Neural-linked optical visors with real-time reality overlays.</p>
+                    <div class="price-action">
+                        <span class="price">850.00 CREDITS</span>
+                        <button class="btn btn-outline glow-effect add-to-cart">ACQUIRE</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card tilt-card reveal" style="transition-delay: 0.2s;">
+                <div class="card-bg"></div>
+                <div class="card-img-wrapper">
+                    <img src="./assets/hoverboard.png" alt="Anti-gravity hoverboard" class="floating-img" style="animation-delay: -3s;">
+                </div>
+                <div class="card-info">
+                    <div class="tags"><span class="tag">VEHICLE</span><span class="tag">LIMITED</span></div>
+                    <h3>GravBoard Zero</h3>
+                    <p class="desc">Quantum-levitating personal transport vector with neon trails.</p>
+                    <div class="price-action">
+                        <span class="price">1200.00 CREDITS</span>
+                        <button class="btn btn-outline glow-effect add-to-cart">ACQUIRE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">NEO-SHOP</div>
+            <p>&copy; 2077 NEO-SHOP CORPORATION. ALL RIGHTS RESERVED.</p>
+            <div class="social-links">
+                <a href="#">SYSTEM.NET</a>
+                <a href="#">CYBERSPACE</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <button class="close-cart" id="closeCart">X</button>
+            <h2 class="text-neon">YOUR CART</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Items will be injected here -->
+            </div>
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>TOTAL:</span>
+                    <span class="total-price text-neon" id="totalPrice">0.00 CREDITS</span>
+                </div>
+                <button class="btn btn-primary glow-effect checkout-btn" id="checkoutBtn">PROCESS PAYMENT</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
